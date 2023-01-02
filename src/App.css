@@ -1,38 +1,145 @@
+
 .App {
+  height: 100%;
+  font-size: 20px;
+}
+.container{
+  padding: 0 5vw;
+}
+
+.navbar-brand{
+  color: #ffffff;
+  font-size: 25px;
+}
+.karuna{
+  font-size: 20px;
+  background-color: rgb(61, 12, 65);
+  opacity: 0.6;
+  box-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.nav-item{
+  padding: 0.3vh;
+}
+
+.nav-link{
+  color:rgb(208, 208, 208)  
+}
+
+.menu_active{
+  color: white;
+  border-color: #ffffff00;
+  border-bottom: 2px solid;
+}
+
+.tag{
+  color:white;
+  background-image: url('./images/woman.jpeg');
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: multiply;
+  background-color: rgb(153, 121, 158); 
+  display: flex;
+  padding: 5vh 5vw ;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  text-align: start;
+}
+.first{
+  align-items: center;
+}
+.two{
+  align-items: center;
+}
+.line-1{
+  font-size: 7vw;
+}
+.line-2{
+  font-size:4vw;
+}
+.line-3{
+  font-size: 3vw;
+}
+.main-box{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("./images/loginbg.jpg");
+  background-size: cover;
+  color: white;
+  background-color: rgb(58, 58, 58);
+  opacity: 0.8;
+  font-family: "Open-Sans";
+  src: url('./fonts/OpenSans_Condensed-Regular.ttf');
+  border-radius: 10px;
+  box-shadow: 0 0.2em 0.5em rgb(89, 89, 89);
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.main-box > input{
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin-top: 2vh;
+}
+
+@media(max-width:850px){
+  .main-box{
+    width: 60vw;  
+  font-size: 4vw;
+  }
+}
+.page{
+  padding-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.signlink{
+  text-decoration: none;
   color: white;
 }
+.new-sign{
+  display: flex;
+  text-shadow: 2px 2px black;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signlink{
+  font-weight: bold;
+  text-shadow: white;
+  padding-left: 5px;
+  color: rgb(255, 255, 113)
+}
+.login-btn{
+  
+  padding: 5px 20px;
+  margin: 15px;
+  border-radius: 2px;
+  color: black;
+  transition: 0.5s;
+  background-color: antiquewhite;
+}
+.login-btn:hover{
+  transform: scale(1.15);
+}
+.about{
+  border-radius: 5px;
+  position: relative;
+  top: -3em;
+  margin: 5vh 5vw;
+  background-color: rgb(185, 206, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
